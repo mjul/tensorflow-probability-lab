@@ -41,8 +41,8 @@ days_in_month = (first_in_month + np.timedelta64(1, dtype='M')).astype('datetime
 for m in range(num_months):
     month_first_idx = m * day_of_month_num_seasons
     month_last_idx = month_first_idx + days_in_month[month_first_idx].astype(np.int32)
-    # All days of the month have 1 step (on day)
-    # In shorter months the last days of the month do not exist so the step is 0 (set as default above)
+    # All days of the month have 1 step (one day)
+    # In shorter months the high-numbered days of the month do not exist so the step is 0 (set as default above)
     day_of_month_steps_per_season_flat[month_first_idx:month_last_idx] = 1
 
 day_of_month_steps_per_season = day_of_month_steps_per_season_flat.reshape(-1, day_of_month_num_seasons)
