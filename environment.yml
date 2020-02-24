@@ -1,0 +1,12 @@
+name: tensorflow-probability-lab
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - tensorflow-gpu
+  - tensorflow-probability
+  - matplotlib
+  - pandas
+  - seaborn
+prefix: C:\Users\marti\Anaconda3\envs\tensorflow-probability-lab
+
