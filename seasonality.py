@@ -34,7 +34,7 @@ fig.show()
 # to make seasonality on day-of-month work correctly
 
 day_of_month_num_seasons = 31
-day_of_month_steps_per_season_flat = np.zeros(shape=(num_months, day_of_month_num_seasons), dtype=np.int32)
+day_of_month_steps_per_season_flat = np.zeros(num_months * day_of_month_num_seasons, dtype=np.int32)
 
 days_in_month = (first_in_month + np.timedelta64(1, dtype='M')).astype('datetime64[D]') - first_in_month
 
