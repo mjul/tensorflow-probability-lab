@@ -4,9 +4,11 @@ channels:
 dependencies:
   - python=3.7
   - tensorflow-gpu
-  - tensorflow-probability
   - matplotlib
   - pandas
   - seaborn
+  - pip
+  - pip:
+      - tensorflow-probability==0.9.0
 prefix: C:\Users\marti\Anaconda3\envs\tensorflow-probability-lab
 
